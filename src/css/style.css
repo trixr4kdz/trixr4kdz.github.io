@@ -56,6 +56,20 @@ footer.page-footer {
   margin: 0;
 }
 
+#portrait-img img {
+  max-height: 100%;
+  max-width: 100%;
+}
+
+.fa-4x {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.fa-4x:hover {
+  color: #f55;
+}
+
 #return-to-top {
     position: fixed;
     bottom: 20px;
