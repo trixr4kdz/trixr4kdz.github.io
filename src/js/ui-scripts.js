@@ -23,14 +23,4 @@
     }, 500);
   });
 
-  // ==== Send email button ====
-  $("#send-email-button").click(function() {
-    var firstName = $("#first-name").val();
-    var lastName = $("#last-name").val();
-    var email = $("#email-address").val();
-    var message = $("#message").val();
-
-    // TODO
-  });
-
 })(jQuery); // end of jQuery name space
