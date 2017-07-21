@@ -1,8 +1,9 @@
 (function($){
   $(function(){
 
-    $(".button-collapse").sideNav();
-    $(".parallax").parallax();
+    $('.button-collapse').sideNav();
+    $('.parallax').parallax();
+    $('.carousel').carousel();
 
   }); // end of document ready
 

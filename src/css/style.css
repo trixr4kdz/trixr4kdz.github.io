@@ -110,3 +110,11 @@ footer.page-footer {
     color: #fff;
     top: 5px;
 }
+
+.carousel {
+  height: 500px;
+}
+
+.carousel .carousel-item {
+  width: 400px;
+}
