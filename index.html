@@ -1,3 +1,5 @@
+<!--  background image src = https://media.giphy.com/media/xTiTnxpQ3ghPiB2Hp6/giphy.gif -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,8 +14,8 @@
   <link href="./src/css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 </head>
 <body>
-  <!-- <div class="navbar-fixed"> -->
-    <nav class="white" role="navigation" id="top-nav-bar">
+  <div id="top-navbar" class="navbar-fixed" hidden>
+    <nav class="white" role="navigation">
       <div class="nav-wrapper container">
         <a id="logo-container" href="#" class="brand-logo blue-text text-darken-4">Trixie Anne Roque</a>
         <ul class="right hide-on-med-and-down">
@@ -26,24 +28,23 @@
           <li><a href="#about-me" class="scroll-down blue-text text-darken-4">About</a></li>
         </ul>
 
-        <!-- <ul id="nav-mobile" class="side-nav">
-          <li><a href="#">Navbar Link</a></li>
-        </ul>
         <ul id="nav-mobile" class="side-nav">
-          <li><a href="#about-me">About</a></li>
+          <li><a class="scroll-down blue-text text-darken-4" href="#about-me">About</a></li>
+          <li><a class="scroll-down blue-text text-darken-4" href="#projects">Projects</a></li>
+          <li><a class="scroll-down blue-text text-darken-4" href="#contact">Contact</a></li>
         </ul>
-        <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
-      </div> -->
+        <a href="#" data-activates="nav-mobile" class="button-collapse blue-text text-darken-4"><i class="material-icons">menu</i></a>
+      </div>
     </nav>
-  <!-- </div> -->
+  </div>
 
   <div id="index-banner" class="parallax-container">
     <div class="section no-pad-bot">
       <div class="container">
         <br><br>
-        <h1 class="header center white-text text-darken-2">Hello! I'm Trixie.</h1>
+        <h1 id="hello-string" class="header center white-text text-darken-2"></h1>
         <div class="row center">
-          <h5 class="header col s12 light">Thanks for wandering into my site...</h5>
+          <h5 id='additional-intro' class="header col s12 light"></h5>
         </div>
         <div class="row center">
           <a href="#about-me" id="download-button" class="scroll-down btn-large waves-effect waves-light blue lighten-1">About</a>
@@ -53,7 +54,8 @@
         <br><br>
       </div>
     </div>
-    <div class="parallax"><img src="./src/images/giphy.gif" alt="Blue gradient background"></div>
+
+    <div class="parallax"><img src="./src/images/background.gif" alt="Blue gradient background"></div>
   </div>
 
 
@@ -72,12 +74,11 @@
             Over my time at university, I participated in research projects and REUs (Research Experience for Undergraduates)
             that contributed to my growth as a software developer. One of them is called GRNmap, which you can check out
             by going to the <a href="https://kdahlquist.github.io/GRNmap">GRNmap project</a> site or by viewing the source
-            code on my <a href="https://github.com/trixr4kdz/GRNmap">GitHub repo</a>. Right now, I'm currently working with
-            the <a href="www.radiirobotics.com">Radii Robotics</a> startup to create the first ever telepresence drone that provides 2-way video calling
-            and remote control using a web browser.
-          </p>
-          <p>
-            Scroll down to see the rest of my projects.
+            code on my <a href="https://github.com/trixr4kdz/GRNmap">GitHub repo</a>. I'm currently working with
+            the <a href="https://www.radiirobotics.com">Radii Robotics</a> startup as a part-time contractor to create
+            the first ever telepresence drone that provides two-way video calling and remote browser control.
+            <br><br>
+            Click this <a href="">link</a> to download my latest resume or scroll down to see some of the projects I've worked on.
           </p>
         </div>
       </div>
@@ -86,90 +87,85 @@
   </div>
 
   <div class="parallax-container valign-wrapper">
-    <div class="parallax"><img src="./src/images/giphy.gif" alt="Unsplashed background img 2"></div>
+    <div class="parallax"><img src="./src/images/background.gif" alt="Unsplashed background img 2"></div>
   </div>
 
   <div class="container" id="projects">
     <div class="section">
 
       <div class="row">
-        <div class="col s12 center">
-          <h3><i class="mdi-content-send brown-text"></i></h3>
-          <h4 class="blue-text text-darken-4 center">My Projects</h4>
-            <div class="col m6">
-              <div class="card">
-                <div class="card-image">
-                  <img src="./src/images/grnmap-progress.png" alt="grnmap">
-                  <span class="black-text card-title">GRNmap</span>
-                </div>
-                <div class="card-content">
-                  <p>I am a very simple card. I am good at containing small bits of information.
-                    I am convenient because I require little markup to use effectively.
-                  </p>
-                </div>
-                <div class="card-action">
-                  <a href="#">This is a link</a>
-                </div>
-              </div>
+        <h4 class="blue-text text-darken-4 center">My Projects</h4>
+        <div class="col l6 m12 s12">
+          <div class="card #0d47a1 blue darken-2">
+            <div class="card-content white-text">
+              <span class="card-title">GRNmap</span>
+              <p>GRNmap is a MATLAB bioinformatics software that estimates the parameters (production/repression threshold,
+                network weights, production rates) of medium-scale gene regulatory networks and allows forward simulation on the network.
+                The program outputs individual gene plots in addition to the estimated parameters after running calculations
+                on Excel spreadsheet data inputs.
+              </p>
             </div>
-
-            <div class="col m6">
-              <div class="card">
-                <div class="card-image">
-                  <img src="" alt="markit">
-                  <span class="black-text card-title">Markit</span>
-                </div>
-                <div class="card-content">
-                  <p>I am a very simple card. I am good at containing small bits of information.
-                    I am convenient because I require little markup to use effectively.</p>
-                </div>
-                <div class="card-action">
-                  <a href="#">This is a link</a>
-                </div>
-              </div>
+            <div class="card-action white center">
+              <a class="#1976d2 blue-text darken-2" href="https://kdahlquist.github.io/GRNmap">GRNmap Website</a>
+              <a class="#1976d2 blue-text darken-2" href="https://github.com/trixr4kdz/GRNmap">GRNmap Repo</a>
             </div>
-
-            <div class="col m6">
-              <div class="card">
-                <div class="card-image">
-                  <img src="" alt="webrtc-video-chat">
-                  <span class="black-text card-title">WebRTC Video Chat</span>
-                </div>
-                <div class="card-content">
-                  <p>I am a very simple card. I am good at containing small bits of information.
-                    I am convenient because I require little markup to use effectively.</p>
-                </div>
-                <div class="card-action">
-                  <a href="#">This is a link</a>
-                </div>
-              </div>
-            </div>
-
-            <div class="col m6">
-              <div class="card">
-                <div class="card-image">
-                  <img src="" alt="yah">
-                  <span class="card-title">Yah: A Javascript Transpiler</span>
-                </div>
-                <div class="card-content">
-                  <p>I am a very simple card. I am good at containing small bits of information.
-                    I am convenient because I require little markup to use effectively.</p>
-                </div>
-                <div class="card-action">
-                  <a href="#">This is a link</a>
-                </div>
-              </div>
-            </div>
-
           </div>
         </div>
+
+        <div class="col l6 m12 s12">
+          <div class="card #0d47a1 blue darken-2">
+            <div class="card-content white-text">
+              <span class="card-title">WebRTC Video Chat</span>
+              <p>A simple demonstration of what the two-way video chat using WebRTC looks
+                like on a browser. Signaling server is written in NodeJS and is hosted on AWS EC2.
+                This application can be run using Chrome or Firefox browsers. To use, simply open two
+                separate web browsers and enter the IP address <a class="#eeff41 lime-text accent-2"
+                href="https://34.210.146.191:3000/">https://34.210.146.191:3000/</a> to access the application.
+                You will need to select the option to trust the site.
+              </p>
+            </div>
+            <div class="card-action white center">
+              <a class="#1976d2 blue-text darken-2" href="#">Video Chat Web App</a>
+              <a class="#1976d2 blue-text darken-2" href="#">Video Chat GitHub Repo</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col l6 m12 s12">
+          <div class="card #0d47a1 blue darken-2">
+            <div class="card-content white-text">
+              <span class="card-title">Markit</span>
+              <p>Markit is a web and mobile application that aims to bridge the gap between buyers and sellers
+                on college campuses. Users can use Markit to post items they wish to sell or search for items
+                they wish to buy.</p>
+            </div>
+            <div class="card-action white center">
+              <a class="#1976d2 blue-text darken-2" href="https://github.com/VicFrolov/Markit">Markit GitHub Repo</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col l6 m12 s12">
+          <div class="card #0d47a1 blue darken-2">
+            <div class="card-content white-text">
+              <span class="card-title">yah: A Javascript Transpiler</span>
+              <p>Born from the Compiler Construction course taught by Dr. Ray Toal at
+                Loyola Marymount University.</p>
+            </div>
+            <div class="card-action white center">
+              <a class="#1976d2 blue-text darken-2" href="https://trixr4kdz.github.io/yah">yah GitHub Page</a>
+              <a class="#1976d2 blue-text darken-2" href="https://github.com/trixr4kdz/yah">yah GitHub Repo</a>
+            </div>
+          </div>
+        </div>
+
       </div>
 
     </div>
-  </div>
+  </div> <!-- End projects -->
 
   <div class="parallax-container valign-wrapper">
-    <div class="parallax"><img src="./src/images/giphy.gif" alt="Unsplashed background img 3"></div>
+    <div class="parallax"><img src="./src/images/background.gif" alt="Unsplashed background img 3"></div>
   </div>
 
   <!-- Return to Top -->
@@ -198,6 +194,8 @@
 
   <!--  Scripts-->
   <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/jquery.typeit/4.4.0/typeit.min.js"></script>
+
   <script src="./dist/js/materialize.js"></script>
   <script src="./src/js/init.js"></script>
   <script src="./src/js/ui-scripts.js"></script>
