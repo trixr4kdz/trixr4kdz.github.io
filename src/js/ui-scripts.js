@@ -34,6 +34,7 @@
     strings: 'Hello! I\'m Trixie.',
     speed: 90,
     cursor: false,
+    autoStart: false,
   });
 
   $('#additional-intro').typeIt({
@@ -41,6 +42,7 @@
     speed: 100,
     startDelay: 1700,
     cursor: false,
+    autoStart: false,
   });
 
 })(jQuery); // end of jQuery name space
