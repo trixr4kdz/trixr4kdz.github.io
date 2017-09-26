@@ -32,17 +32,17 @@
 
   $('#hello-string').typeIt({
     strings: 'Hello! I\'m Trixie.',
-    speed: 200,
+    speed: 2000,
     cursor: false,
-    autoStart: false,
+    autoStart: true,
   });
 
   $('#additional-intro').typeIt({
     strings: 'Thanks for wandering into my site...',
-    speed: 200,
-    startDelay: 3750,
+    speed: 2000,
+    startDelay: 3250,
     cursor: false,
-    autoStart: false,
+    autoStart: true,
   });
 
 })(jQuery); // end of jQuery name space
