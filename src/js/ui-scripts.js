@@ -32,16 +32,14 @@
 
   $('#hello-string').typeIt({
     strings: 'Hello! I\'m Trixie.',
-    speed: 2000,
     cursor: false,
     autoStart: true,
   });
 
   $('#additional-intro').typeIt({
-    strings: 'Thanks for wandering into my site...',
-    speed: 2000,
-    startDelay: 3250,
-    cursor: false,
+    strings: ['I\'m a Software Engineer.'],
+    startDelay: 3000,
+    cursor: true,
     autoStart: true,
   });
 

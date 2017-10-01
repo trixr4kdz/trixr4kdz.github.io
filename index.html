@@ -5,10 +5,11 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
-  <title>Trixie Anne Roque</title>
+  <title>Trixie's Site of Wonders</title>
 
   <!-- CSS  -->
   <link href="//netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">
+  <link ref="icon" type="image/jpg" href="favicon.ico">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="./dist/css/materialize.min.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <link href="./src/css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
@@ -41,10 +42,11 @@
   <div id="index-banner" class="parallax-container">
     <div class="section no-pad-bot">
       <div class="container">
-        <br><br>
-        <h1 id="hello-string" class="header center white-text text-darken-2"></h1>
         <div class="row center">
-          <h5 id='additional-intro' class="header col s12 light"></h5>
+          <h1 id="hello-string" class="header white-text text-darken-2"></h1>
+        </div>
+        <div class="row center">
+          <h3 id='additional-intro' class="header white-text col s12 light"></h5>
         </div>
         <div class="row center">
           <a href="#about-me" id="download-button" class="scroll-down btn-large waves-effect waves-light blue lighten-1">About</a>
@@ -96,8 +98,23 @@
 
       <div class="row">
         <h4 class="blue-text text-darken-4 center">My Projects</h4>
-        <div class="col l6 m12 s12">
-          <div class="card #0d47a1 blue darken-2">
+        <div class="col l6 m6 offset-m3 s12">
+          <div class="card blue lighten-1">
+            <div class="card-tabs">
+              <ul class="tabs tabs-fixed-width #e1f5fe light-blue lighten-5">
+                <li class="tab"><a class="active" href="#grnmap-plot">Example Graph</a></li>
+                <li class="tab"><a href="#grnmap-computation">Computation Progress</a></li>
+              </ul>
+            </div>
+            <div class="card-image">
+              <div id="grnmap-plot">
+                <img src="./src/images/grnmap-plots.jpg">
+              </div>
+              <div id="grnmap-computation">
+                <img src="./src/images/grnmap-progress.jpg">
+              </div>
+            </div>
+
             <div class="card-content white-text">
               <span class="card-title">GRNmap</span>
               <p>GRNmap is a MATLAB bioinformatics software that estimates the parameters (production/repression threshold,
@@ -113,8 +130,11 @@
           </div>
         </div>
 
-        <div class="col l6 m12 s12">
-          <div class="card #0d47a1 blue darken-2">
+        <div class="col l6 m6 offset-m3 s12">
+          <div class="card blue lighten-1">
+            <div class="card-image">
+              <img src="./src/images/webRTC-preview.jpg">
+            </div>
             <div class="card-content white-text">
               <span class="card-title">WebRTC Video Chat</span>
               <p>A simple demonstration of what the two-way video chat using WebRTC looks
@@ -132,8 +152,11 @@
           </div>
         </div>
 
-        <div class="col l6 m12 s12">
-          <div class="card #0d47a1 blue darken-2">
+        <div class="col l6 m6 offset-m3 s12">
+          <div class="card blue lighten-1">
+            <div class="card-image">
+              <img src="./src/images/markitLogo.jpg">
+            </div>
             <div class="card-content white-text">
               <span class="card-title">Markit</span>
               <p>Markit is a web and mobile application that aims to bridge the gap between buyers and sellers
@@ -146,8 +169,11 @@
           </div>
         </div>
 
-        <div class="col l6 m12 s12">
-          <div class="card #0d47a1 blue darken-2">
+        <div class="col l6 m6 offset-m3 s12">
+          <div class="card blue lighten-1">
+            <div class="card-image">
+              <img src="./src/images/yahLogo.jpg">
+            </div>
             <div class="card-content white-text">
               <span class="card-title">yah: A Javascript Transpiler</span>
               <p>Born from the Compiler Construction course taught by Dr. Ray Toal at
