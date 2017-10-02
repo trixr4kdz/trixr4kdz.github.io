@@ -121,5 +121,24 @@ footer.page-footer {
 }
 
 #social-media-links {
-  padding: 50px;;
+  padding: 50px;
+}
+
+.tabs .tab a {
+  color: #ddd;
+  background: #e3f2fd;
+}
+
+.tabs .tab a.active {
+  color: #d1e1e1;
+  background: #2196f3;
+}
+
+.tabs .indicator {
+  background: #d1e1e1;
+}
+
+.tabs .tab a:hover {
+  color: #efffff;
+  background: #2196f3;
 }

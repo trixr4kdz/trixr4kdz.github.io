@@ -31,16 +31,16 @@
   });
 
   $('#hello-string').typeIt({
-    strings: 'Hello! I\'m Trixie.',
-    cursor: false,
-    autoStart: true,
-  });
-
-  $('#additional-intro').typeIt({
-    strings: ['I\'m a Software Engineer.'],
-    startDelay: 3000,
+    strings: ['Hello! I\'m Trixie...',
+              'I\'m a Programmer.',
+              'Nice of you to drop by :)',
+              'This is Trixie\'s Site of Wonders'],
     cursor: true,
+    deleteSpeed: 100,
+    deleteDelay: 2000,
+    breakLines: false,
     autoStart: true,
+    lifeLike: true,
   });
 
 })(jQuery); // end of jQuery name space
