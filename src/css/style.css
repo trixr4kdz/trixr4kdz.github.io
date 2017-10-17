@@ -57,11 +57,6 @@ footer.page-footer {
   margin: 0;
 }
 
-#portrait-img img {
-  max-height: 100%;
-  max-width: 100%;
-}
-
 .fa-4x {
   padding-left: 10px;
   padding-right: 10px;
